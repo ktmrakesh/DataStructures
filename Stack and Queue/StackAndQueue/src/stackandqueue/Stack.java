@@ -15,18 +15,18 @@ public class Stack {
     }
     
     //push the element is tha stack
-    public void push(int n){
+    public <E> void push(E n){
         stack.addLast(n);
     }
     
     //pop the element from stack
-    public int pop(){
-        return (int) stack.removeLast();
+    public <E> E pop(){
+        return (E) stack.removeLast();
     }
     
     //check the elements to be popped
-    public int peek(){
-        return (int) stack.getLast();
+    public <E> E peek(){
+        return (E) stack.getLast();
     }
     
     // checks whether the stack is empty or not 

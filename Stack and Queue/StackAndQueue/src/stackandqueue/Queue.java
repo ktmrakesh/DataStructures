@@ -16,18 +16,18 @@ public class Queue {
     }
     
     //Add elements in the queue
-    public void enqueue(int n){
+    public <E> void enqueue(E n){
         queue.addLast(n);
     }
     
     //remove the first elements from the queue
-    public int dequeue(){
-        return (int) queue.remove(0);
+    public <E> E dequeue(){
+        return  (E) queue.remove(0);
     }
     
     // see the first elements in the queue 
-    public int peek(){
-        return (int) queue.get(0);
+    public <E> E peek(){
+        return (E) queue.get(0);
     }
     
     //check if the queue is empty

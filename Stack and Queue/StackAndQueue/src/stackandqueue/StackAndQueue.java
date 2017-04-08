@@ -17,7 +17,7 @@ public class StackAndQueue {
     public static void main(String[] args) {
         
         Stack stack = new Stack();
-        stack.push(1);
+        stack.push("abc");
         stack.push(2);
         stack.push(3);
         System.out.println("Stack Size: "+stack.size());
@@ -25,7 +25,7 @@ public class StackAndQueue {
         System.out.println("Poped Element: "+stack.pop());
         System.out.println("Popped Element: "+stack.pop());
         Queue queue = new Queue();
-        queue.enqueue(1); //inserts 1 in the queue
+        queue.enqueue("abc"); //inserts 1 in the queue
         queue.enqueue(2);  // inserts 2 
         queue.enqueue(3); // inserts 3
         System.out.println("Dequeued Element: "+queue.dequeue());  // dequeue 1
