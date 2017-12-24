@@ -7,26 +7,26 @@ package stackandqueue;
 
 import java.util.LinkedList;
 
-public class Stack {
-    LinkedList stack;
+public class Stack<E> {
+    LinkedList<E> stack;
     
     public Stack(){
         stack = new LinkedList();
     }
     
     //push the element is tha stack
-    public <E> void push(E n){
+    public void push(E n){
         stack.addLast(n);
     }
     
     //pop the element from stack
-    public <E> E pop(){
-        return (E) stack.removeLast();
+    public E pop(){
+        return stack.removeLast();
     }
     
     //check the elements to be popped
-    public <E> E peek(){
-        return (E) stack.getLast();
+    public E peek(){
+        return stack.getLast();
     }
     
     // checks whether the stack is empty or not 

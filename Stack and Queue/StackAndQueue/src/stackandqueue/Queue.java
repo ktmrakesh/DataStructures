@@ -7,8 +7,8 @@ package stackandqueue;
 
 import java.util.LinkedList;
 
-public class Queue {
-    LinkedList queue;
+public class Queue<D> {
+    LinkedList<D> queue;
     
     //Constructor Initilize queue
     public Queue(){
@@ -16,18 +16,18 @@ public class Queue {
     }
     
     //Add elements in the queue
-    public <E> void enqueue(E n){
+    public void enqueue(D n){
         queue.addLast(n);
     }
     
     //remove the first elements from the queue
-    public <E> E dequeue(){
-        return  (E) queue.remove(0);
+    public  D dequeue(){
+        return  queue.remove(0);
     }
     
     // see the first elements in the queue 
-    public <E> E peek(){
-        return (E) queue.get(0);
+    public D peek(){
+        return queue.get(0);
     }
     
     //check if the queue is empty
